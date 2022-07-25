@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import colors from './src/utils/colors'
 
 export default function App() {
   return (
@@ -22,7 +23,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   safeArea: {
-    backgroundColor:"#f00",
+    backgroundColor:colors.PRIMARY_COLOR,
     height:200,
     borderBottomLeftRadius:30,
     borderBottomRightRadius:30,
