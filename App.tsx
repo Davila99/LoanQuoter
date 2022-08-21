@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import colors from './src/utils/colors'
+import Form from './src/components/Form';
 
 export default function App() {
   return (
     <>
+    <StatusBar />
       <SafeAreaView style={styles.safeArea}>
-        <Text>Formulario HEAD</Text>
+        <Text style={styles.titleApp} >Cotizador de Prestamos</Text>
+        <Form></Form>
+        
       </SafeAreaView>
 
       <View>
@@ -30,6 +34,13 @@ const styles = StyleSheet.create({
     alignItems:'center',
 
   },
+  titleApp:{
+    fontSize:25,
+    fontWeight:'bold',
+    color:'#fff',
+    marginTop:40,
+    
+  }
 });
 
 <Text>Formulario HEAD</Text>
