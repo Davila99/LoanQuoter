@@ -1,7 +1,6 @@
 import React from "react";
 import {StyleSheet,TextInput,View} from "react-native"
 import colors from "../utils/colors";
-import color from "../utils/colors"
 
 export default function Form(){
     return(
@@ -12,9 +11,9 @@ export default function Form(){
             keyboardType="numeric"
             style={styles.input}
             />
-            <TextInput placeholder="Interes"
+            <TextInput placeholder="Interes %"
             keyboardType="numeric"
-            style={styles.input}/>
+            style={[styles.input, styles.inputPorcentaje]} />
             </View>
         </View>
     )
@@ -50,6 +49,7 @@ input:{
     
 },
 inputPorcentaje:{
-    
+    width:"40%",
+    marginLeft:5,
 }
 });
