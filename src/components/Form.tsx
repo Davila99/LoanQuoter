@@ -45,8 +45,6 @@ input:{
     marginBottom:10,
     color:'#000',
     paddingHorizontal:20,
-    
-    
 },
 inputPorcentaje:{
     width:"40%",
